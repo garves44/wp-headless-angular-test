@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     // need to get the rest API for wordpress still
-    this.http.get('').subscribe(data => {
+    this.http.get('http://garvestest.local/wp-json/wp/v2/posts').subscribe(data => {
       // can not itterate over items in object with angular - workaround with projects array
       for (let key in data) {
         if (data.hasOwnProperty(key)) {
