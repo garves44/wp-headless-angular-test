@@ -3,10 +3,9 @@
   <h1>Projects</h1>
   <ul>
     <li *ngFor="let project of projects">
-      {{ project.title.rendered }}
-      <img src="{{ project.better_featured_image.media_details.sizes.medium.source_url}}" alt="{{ project.better_featured_image.alt_text }}">
+     {{project.content.rendered}}
+      <img src="{{project.media.source_url}}" alt="">
     </li>
   </ul>
+<p>this is working</p>
  </div>
-
-
