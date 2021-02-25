@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>Projects</h1>
+  <ul>
+    <li *ngFor="let project of projects">
+      {{ project.title.rendered }}
+      <img src="{{ project.better_featured_image.media_details.sizes.medium.source_url}}" alt="{{ project.better_featured_image.alt_text }}">
+    </li>
+  </ul>
+ </div>
+
+
